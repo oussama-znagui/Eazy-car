@@ -1,0 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/brogte');
+
+
+nav{
+    font-family: 'brogte';
+}
+body{
+    font-family: 'poppins' sans-serif;
+}
+
+.S1{
+    background-image: url(../media/pexels-photo-9331822.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.S4{
+    background-image: url(../media/Rectangle\ 30.png);
+    height: auto;
+    
+    background-position: center;
+    background-size: cover;
+}
+
