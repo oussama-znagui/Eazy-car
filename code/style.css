@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.faq {
+    padding: 3em 0;
+    background-color: #EDEDED;
+    text-align: center;
+}
+
+.faqq {
+    width: 60%;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.faqq .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faqq .reponse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease, opacity 1s ease;
+}
+
+.faqq.activeee .reponse {
+    max-height: 1000px; 
+    opacity: 1;
+}
+
+.faqq button.toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
