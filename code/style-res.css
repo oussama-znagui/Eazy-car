@@ -23,6 +23,8 @@ body{
     background-size: cover;
 }
 
+<<<<<<< HEAD
+=======
 .active{ 
     background-color: rgb(67, 51, 51) !important;
     margin: 0 1em;
@@ -32,3 +34,4 @@ body{
 }
 
 
+>>>>>>> 319047a420875b66a9595592d69efc4793bc7c9a
