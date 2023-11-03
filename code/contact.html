@@ -4,12 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    
+
 
     <title>Eazy car</title>
 
 </head>
 <body>
-    <h1>Bonjour</h1>
+    <header class="h-screen bg-gradient-to-b from-white to-slate-300 md:bg-cover">
+        <nav class="container  mx-auto p-6 ">
+            <div class="flex items-center justify-between">
+                <span>
+                    EazyCar
+                </span>
+                <div class="hidden md:flex space-x-6">
+                    <a href="" class="hover:text-red-400">Accueil</a>
+                    <a href="" class="hover:text-red-400">A propos</a>
+                    <a href="" class="hover:text-red-400">Réservation</a>
+                    <a href="" class="hover:text-red-400">Contact</a>
+                </div>
+                <button class="hidden md:block bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded-full">Résérver</button>
+            </div>
+        </nav>
+    <div class="md:flex items-center  mt-14 ml-12">
+        <div class="flex-col w-80 flex text-center justify-between h-72">
+    <h1 class="text-3xl font-bold "> On est la pour vous ! </h1>
+    <h2 class=" font-medium">"Votre Satisfaction Chez EasyCar : NousSommes à Votre Service!"</h2>
+    <p class="drop-shadow-lg text-teal-800 ">"Nous sommes ravis de vous offrir une expérience exceptionnelle de location de voiture chez EasyCar, où votre avis est précieux, et notre équipe est à votre disposition pour répondre à vos besoins à tout moment."
+    </p>
+</div>
+    <img src="../media/purepng 1.png "class=" mt-10 md:mt-0 md:ml-7">
+</div>
+</header>
+<section class="bg-white bg-cover md:flex justify-around">
+    <div class="mt-28 md:ml-20 flex flex-col justify-around items-center h-96">
+        <div class=" p-6 w-80 bg-gradient-to-b from-slate-300 to-white rounded-xl shadow-lg  space-x-4">
+            <div class="shrink-0 flex "> 
+              <img class="h-7 w-7" src="../media/map_FILL0_wght400_GRAD0_opsz24 1.png" >
+            
+            <div class="  md:ml-7 flex flex-col  justify-around">
+              <div class=" text-lg text-slate-500">Address :</div>
+              <p class="mb-0.5 text-sm font-bold">198 West 21th Street, Suite 721 New York NY 10016</p>
+            </div>
+          </div>
+        </div>
+        <div class="  p-6 w-80 bg-gradient-to-b from-slate-300 to-white rounded-xl shadow-lg  space-x-4">
+            <div class="shrink-0 flex">
+              <img class="h-7 w-7" src="../media/map_FILL0_wght400_GRAD0_opsz24 1.png" >
+            
+            <div class=" ml-7 flex flex-col gap-1">
+              <div class=" text-lg text-slate-500">Phone:</div>
+              <p class="mb-0.5 text-sm font-bold">+ 1235 2355 98</p>
+            </div>
+          </div>
+        </div> 
+        <div class="  p-6 w-80 bg-gradient-to-b from-slate-300 to-white rounded-xl shadow-lg  space-x-4">
+            <div class="shrink-0 flex">
+              <img class="h-7 w-7" src="../media/map_FILL0_wght400_GRAD0_opsz24 1.png" >
+            
+            <div class=" ml-7 flex flex-col gap-2 ">
+              <div class=" text-lg text-slate-500">Email:</div>
+              <p class=" mb-0.5 text-sm font-bold">EasyCar@youcode.com</p>
+            </div>
+          </div>
+        </div>
+    </div>
     
+  <div class="flex flex-col text-center  items-center items-start gap-14 mt-20 mb-6 justify-start ">
+    <h3 class="text-3xl font-extrabold">contactez-nous</h3>
+    <input id="prenom" class=" w-80 h-12 placeholder:text-black px-5 rounded-2xl shadow-lg" type="text" placeholder="prénome">
+    <p id="prenom-error" class="error-message">prenom invalide</p>
+    <input id="nom" class=" w-80 h-12  placeholder:text-black px-5 rounded-2xl shadow-lg" type="text" placeholder="nom">
+    <p id="nom-error" class="error-message"> nom invalide</p>
+    <input id="email" class=" w-80 h-12 placeholder:text-black px-5 rounded-2xl shadow-lg" type="email" placeholder="Email">
+    <p id="email-error" class="error-message">email invalide</p>
+    <input id="tele" class=" w-80 h-12 placeholder:text-black px-5 rounded-2xl shadow-lg" type="telephone" placeholder="telephone">
+    <p id="tele-error" class="error-message">N°TELE invalide</p>
+    <textarea class="w-80 h-24 placeholder:text-black px-5 rounded-2xl shadow-lg" style="resize: none;" placeholder="Message"></textarea>
+    <button class= " md:mr-auto right-20 w-28 py-2 rounded-xl bg-emerald-500 text-white font-semibold  shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75" onclick="onclic()">envoyer</button>
+    <span id="aficher"></span>
+</div>
+</section>
+<section class="bg-slate-400 md:h-screen flex justify-center items-center p-2">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.699891148379!2d-9.237661325937365!3d32.29304570856466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYoucode%20Safi!5e0!3m2!1sen!2sma!4v1698854756466!5m2!1sen!2sma" width="1300" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<footer class="bg-gray-300 flex flex-col items-center justify-center h-auto py-10 ">
+  <div class="flex justify-between w-4/5">
+      <div class="">
+          <p class="font-black my-4">Cordonnées</p>
+          <p>www.eazy-car.ma
+              <br>contact@eazy-car.ma
+              <br>+212 (0) 6 69 66 62 05
+              <br>+212 (0) 6 12 13 14 15
+          </p>
+      </div>
+<div class="w-2/5">
+          <h2 class="font-black text-2xl my-4">Newsletter !</h2>
+          <p class="text-sm    my-4">Notre newsletter exclusive vous tient au courant des dernières offres de location de voitures, des conseils de voyage passionnants et des actualités de l'industrie automobile</p>
+
+              <div class="relative">
+                  <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                      <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                      <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                      <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                      </svg>
+                  </div>
+              <input type="text" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com">
+              </div>
+
+      </div>
+    </div>
+  <div class="border-t-2 border-black w-5/6 my-5"></div>
+  <div class="flex justify-between w-4/5">
+      <div>
+          <a href="" class="mx-2">Accueil</a>
+          <a href="" class="mx-2">A propos</a>
+          <a href="" class="mx-2">Reservation</a>
+          <a href="" class="mx-2">Conactez-nous</a>
+      </div>
+      <p>Lorem ipsum dolor sit ioqoer o</p>
+  </div>
+
+</footer>
+    <script src="validation.js"></script>
 </body>
 </html>
