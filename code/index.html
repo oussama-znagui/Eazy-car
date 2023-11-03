@@ -1,15 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 
     <title>Eazy car</title>
 
 </head>
+
 <body>
-    <h1>Bonjour</h1>
-    
+
+
+    <header class="bg-gradient-to-b from-gray-100 to-gray-300 ">
+        <nav class="container  mx-auto p-6 ">
+            <div class="flex items-center justify-between">
+                <span>
+                    EazyCar
+                </span>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-red-400">Accueil</a>
+                    <a href="a propos.html" class="hover:text-red-400">A propos</a>
+                    <a href="reservation.html" class="hover:text-red-400">Réservation</a>
+                    <a href="contact.html" class="hover:text-red-400">Contact</a>
+                </div>
+                <button
+                    class="hidden md:block bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded-full">Résérver</button>
+            </div>
+        </nav>
+
+        <h1 class="mb-4 text-5xl font-extrabold leading-none tracking-tight text-center py-4 ">
+            Bienvenue chez Eazy Car</h1>
+        <p class="text-center py-4">La solution idéale pour votre location de voiture. Découvrez nos offres
+            exceptionnelleset
+            partez à l'aventure
+            en toute simplicité.</p>
+        <div class="flex place-content-center my-4 ">
+            <svg te xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
+                <path
+                    d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
+            </svg>
+            <a class="" href="#">Commencer l'aventure</a>
+        </div>
+        <img id="img1" class="h-auto mx-auto my-16 "
+            src="../media/27d4829bfc397de83df2461162c770ac-removebg-preview.png" alt="banner">
+
+    </header>
+    <section>
+        <h1 class="mb-4 text-5xl font-extrabold leading-none tracking-tight text-center py-8">Nos Services</h1>
+        <div class="md:grid grid-cols-3 gap-4 ">
+            <div class="bg-gradient-to-b from-gray-100 to-gray-300 p-4 rounded-md shadow-md text-center">
+                <h4 class="text-xl font-bold">Location de voiture de qualité</h4>
+                <p>Profitez d'une large sélection de véhicules bien entretenus, adaptés à tous vos besoins, que ce soit
+                    pour un usage personnel ou professionnel.</p>
+            </div>
+            <div class="bg-gradient-to-b from-gray-100 to-gray-300 p-4 rounded-md shadow-md text-center">
+                <h4 class="text-xl font-bold">Assistance 24h/24h 7j/7j</h4>
+                <p>Profitez d'une large sélection de véhicules bien entretenus, adaptés à tous vos besoins, que ce soit
+                    pour un usage personnel ou professionnel.</p>
+            </div>
+            <div class="bg-gradient-to-b from-gray-100 to-gray-300 p-4 rounded-md shadow-md text-center">
+                <h4 class="text-xl font-bold">Options de location flexibles</h4>
+                <p>Profitez d'une large sélection de véhicules bien entretenus, adaptés à tous vos besoins, que ce soit
+                    pour un usage personnel ou professionnel.</p>
+            </div>
+            <div class="bg-gradient-to-b from-gray-100 to-gray-300 p-4 rounded-md shadow-md text-center">
+                <h4 class="text-xl font-bold">Resérvation facile en ligne</h4>
+                <p>Profitez d'une large sélection de véhicules bien entretenus, adaptés à tous vos besoins, que ce soit
+                    pour un usage personnel ou professionnel.</p>
+            </div>
+            <div class="bg-gradient-to-b from-gray-100 to-gray-300 p-4 rounded-md shadow-md text-center">
+                <h4 class="text-xl font-bold">Assurane complète</h4>
+                <p>Profitez d'une large sélection de véhicules bien entretenus, adaptés à tous vos besoins, que ce soit
+                    pour un usage personnel ou professionnel.</p>
+            </div>
+            <div class="bg-gradient-to-b from-gray-100 to-gray-300 p-4 rounded-md shadow-md text-center ">
+                <h4 class="text-xl font-bold">Programme de fidélité avantageux</h4>
+                <p>Profitez d'une large sélection de véhicules bien entretenus, adaptés à tous vos besoins, que ce soit
+                    pour un usage personnel ou professionnel.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex justify-between items-center my-16">
+            <div>
+                <h3 class="text-lg font-bold mx-4">Rechercher par marque de voiture</h3>
+                <p class="text-sm mx-4">Découvrer notre large gamme de voitures de location en <br>fonction de vos
+                    préférences de marque</p>
+            </div>
+            <div>
+                <a class="focus:outline-none text-white bg-red-100 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm   px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900  "
+                    href="#">Voir plus</a>
+            </div>
+        </div>
+        <div class="grid grid-cols-6 gap-2 ">
+            <div>
+                <img src="../media/bmw.png" alt="bmw">
+                <h5 class="text-sm font-bold text-center ">BMW</h5>
+            </div>
+
+            <div>
+                <img src="../media/mercedes.png" alt="bmw">
+                <h5 class="text-sm font-bold text-center">Mercedes-Benz</h5>
+            </div>
+            <div>
+                <img src="../media/ferrari.png" alt="bmw">
+                <h5 class="text-sm font-bold text-center">Ferrari</h5>
+            </div>
+            <div>
+                <img src="../media/toyota.png" alt="bmw">
+                <h5 class="text-sm font-bold text-center my-8">Toyota</h5>
+            </div>
+            <div>
+                <img src="../media/honda.png" alt="bmw">
+                <h5 class="text-sm font-bold text-center my-8">Honda</h5>
+            </div>
+            <div>
+                <img src="../media/chevrolet.png" alt="bmw">
+                <h5 class="text-sm font-bold text-center my-16">Chevrolet</h5>
+            </div>
+
+        </div>
+        <div class="md:grid grid-cols-2 gap-1 mx-8 ">
+            <div
+                class="block max-w-lg mx-4 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex justify-between ">
+
+                <div>
+
+                    <h5 class=" font-bold tracking-tight  dark:text-white">Trouver votre voiture de reve
+                    </h5>
+                    <p class="font-normal tracking-tight dark:text-gray-400 text-left">Découvrez une sélection variée
+                        <br> de voitures
+                        qui
+                        correspondent <br> à vos attentes et à votre style <br> de conduite
+                    </p>
+                    <a class="text-dark bg-white   font-medium rounded-full text-sm px-5 py-1  " href="#">Voir plus</a>
+                </div>
+                <div>
+                    <img class="rounded-full h-24 w-24 " src="../media/souriant.jpg" alt="">
+                </div>
+
+            </div>
+            <div
+                class="max-w-lg mx-4 p-6 bg-red-600 border border-red-600 rounded-lg shadow hover:bg-red-600 dark:bg-red-800 dark:border-red-700 dark:hover:bg-red-700 flex justify-between">
+
+                <div>
+
+                    <h5 class=" font-bold tracking-tight  dark:text-white">Trouver votre voiture de reve
+                    </h5>
+                    <p class="font-normal tracking-tight dark:text-gray-400 text-left">Découvrez une sélection variée
+                        <br> de voitures
+                        qui
+                        correspondent <br> à vos attentes et à votre style de conduite
+                    </p>
+                    <a class="text-dark bg-white   font-medium rounded-full text-sm px-5 py-1 mr-2 mb-2 " href="#">
+                        Voire plus
+                    </a>
+                </div>
+                <div>
+                    <img class=" w-48 " src="../media/bugatti-png-bugatti-png-2202.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="relative">
+        <h1 class="mb-4 text-5xl font-extrabold leading-none tracking-tight text-center py-8">
+            Résérver maintenant!
+        </h1>
+        <div id="carousel">
+
+            <div id="item"
+                class="flex flex-col items-center sm:flex-col sm:items-center  md:flex-row sm:justify-center  md:justify-around gap-4">
+
+                <span
+                    class="absolute left-8 top-2/4 cursor-pointer  text-2xl bg-black rounded-full w-8 text-white text-center transition duration-500 hover:bg-gray-300 hover:text-black"
+                    id="prev">&#8656;</span>
+
+
+                <div
+                    class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#" class="">
+                        <img class="p-5 h-64 max-w-full rounded-3xl " src="../media/Audi.jpg" alt="">
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Audi R8</h5>
+                            <div class="flex justify-between">
+                                <p class="text-white">Voiture de luxe</p>
+                                <p class="text-white">80 DHS/Jour</p>
+
+                            </div>
+                        </a>
+
+                        <div class="flex items-center justify-center gap-x-4 my-4">
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#" class="">
+                        <img class="p-5 h-64 h-3/5 max-w-full rounded-3xl " src="../media/car-1.jpg" alt="">
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Mercedes
+                                Sedora</h5>
+                            <div class="flex justify-between">
+                                <p class="text-white">Voiture de luxe</p>
+                                <p class="text-white">80 DHS/Jour</p>
+
+                            </div>
+                        </a>
+
+                        <div class="flex items-center justify-center gap-x-4 my-4">
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <span
+                    class="absolute right-8 top-2/4 cursor-pointer  text-2xl bg-black rounded-full w-8 text-white text-center transition duration-500 hover:bg-gray-300 text-black hover:text-black"
+                    id="next">&#8658;</span>
+            </div>
+            <div id="item" class="flex justify-center gap-4">
+
+                <span
+                    class="absolute left-8 top-2/4 cursor-pointer  text-2xl bg-black rounded-full w-8 text-white text-center transition duration-500 hover:bg-gray-300 hover:text-black"
+                    id="prev">&#8656;</span>
+
+
+                <div
+                    class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#" class="">
+                        <img class="p-5 h-64 h-3/5 max-w-full rounded-3xl " src="../media/car-2.jpg" alt="">
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Range rover
+                                Sport</h5>
+                            <div class="flex justify-between">
+                                <p class="text-white">Voiture de luxe</p>
+                                <p class="text-white">80 DHS/Jour</p>
+
+                            </div>
+                        </a>
+
+                        <div class="flex items-center justify-center gap-x-4 my-4">
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#" class="">
+                        <img class="p-5 h-64 h-3/5 max-w-full rounded-3xl " src="../media/Toyota-Corolla.jpg" alt="">
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Toyota Corolla
+                            </h5>
+                            </h5>
+                            <div class="flex justify-between">
+                                <p class="text-white">Voiture économique</p>
+                                <p class="text-white">50 DHS/Jour</p>
+
+                            </div>
+                        </a>
+
+                        <div class="flex items-center justify-center gap-x-4 my-4">
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <span
+                    class="absolute right-8 top-2/4 cursor-pointer  text-2xl bg-black rounded-full w-8 text-white text-center transition duration-500 hover:bg-gray-300 text-black hover:text-black"
+                    id="next">&#8658;</span>
+            </div>
+            <div id="item" class="flex justify-center gap-4">
+
+                <span
+                    class="absolute left-8 top-2/4 cursor-pointer  text-2xl bg-black rounded-full w-8 text-white text-center transition duration-500 hover:bg-gray-300 hover:text-black"
+                    id="prev">&#8656;</span>
+
+
+                <div
+                    class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#" class="">
+                        <img class="p-5 h-64 h-3/5 max-w-full rounded-3xl " src="../media/maserati.jpg" alt="">
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Maserati</h5>
+                            <div class="flex justify-between">
+                                <p class="text-white">Voiture de luxe</p>
+                                <p class="text-white">120 DHS/Jour</p>
+
+                            </div>
+                        </a>
+
+                        <div class="flex items-center justify-center gap-x-4 my-4">
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#" class="">
+                        <img class="p-5 h-64 h-3/5 max-w-full rounded-3xl " src="../media/hyper.jpg" alt="">
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Koenigsegg
+                            </h5>
+                            <div class="flex justify-between">
+                                <p class="text-white">Voiture de luxe</p>
+                                <p class="text-white">200 DHS/Jour</p>
+
+                            </div>
+                        </a>
+
+                        <div class="flex items-center justify-center gap-x-4 my-4">
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+                            <a href="#"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                to cart</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <span
+                    class="absolute right-8 top-2/4 cursor-pointer  text-2xl bg-black rounded-full w-8 text-white text-center transition duration-500 hover:bg-gray-300 text-black hover:text-black"
+                    id="next">&#8658;</span>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <h1 class="mb-4 text-5xl font-extrabold leading-none tracking-tight text-center py-8">Client Satisfait</h1>
+        <div class="sm:grid grid-cols-3 gap-2 ">
+            <div class="bg-gradient-to-b  from-gray-100 to-gray-300  rounded-md shadow-md text-center">
+                <img class="rounded-full h-24 mx-auto p-2" src="../media/belle.jpg" alt="feedback">
+
+                <p>Le service de location était très pratique et le personnel était extrêmement amical. Je louerai
+                    certainement à nouveau avec eux.</p>
+                <p class="font-bold text-green-500">Sophie M.</p>
+            </div>
+            <div class="bg-gradient-to-b from-gray-100 to-gray-300  rounded-md shadow-md text-center">
+                <img class="rounded-full w-24 h-24 mx-auto p-2" src="../media/fb1.jpg" alt="feedback">
+
+                <p>Le service de location était très pratique et le personnel était extrêmement amical. Je louerai
+                    certainement à nouveau avec eux.</p>
+                <p class="font-bold text-green-500">David L.</p>
+            </div>
+            <div class="bg-gradient-to-b  from-gray-100 to-gray-300  rounded-md shadow-md text-center">
+                <img class="rounded-full h-24 w-24 mx-auto p-2" src="../media/fb2.jpg" alt="feedback">
+
+                <p>Le service de location était très pratique et le personnel était extrêmement amical. Je louerai
+                    certainement à nouveau avec eux.</p>
+                <p class="font-bold text-green-500">Emma G.</p>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="py-16 max-w-full ">
+        <div class="bg-green-400 h-64 items-center ">
+            <div class="flex justify-around text-white font-bold text-2xl text-center  ">
+                <div>
+                    <p class="my-16">30</p>
+                    <p>Ans d'experience</p>
+                </div>
+                <div>
+                    <p class="my-16">1024</p>
+                    <p>total de voitures</p>
+                </div>
+                <div>
+                    <p class="my-16">2389</p>
+                    <p>Client satisfait</p>
+                </div>
+                <div>
+                    <p class="my-16">1024</p>
+                    <p>total des locaux</p>
+                </div>
+            </div>
+
+
+        </div>
+
+   
+    </section>
+    <footer class="bg-gray-300 flex flex-col items-center justify-center h-auto py-10 ">
+        <div class="md:flex justify-between w-4/5">
+            <div class="">
+                <p class="font-black my-4">Cordonnées</p>
+                <p>www.eazy-car.ma
+                    <br>contact@eazy-car.ma
+                    <br>+212 (0) 6 69 66 62 05
+                    <br>+212 (0) 6 12 13 14 15
+                </p>
+            </div>
+
+            <div class="w-2/5">
+                <h2 class="font-black text-2xl my-4">Newsletter !</h2>
+                <p class="text-sm    my-4">Notre newsletter exclusive vous tient au courant des dernières offres de
+                    location de voitures, des conseils de voyage passionnants et des actualités de l'industrie
+                    automobile</p>
+
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                            <path
+                                d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                            <path
+                                d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="email-address-icon"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="name@flowbite.com">
+                </div>
+
+            </div>
+        </div>
+        <div class="border-t-2 border-black w-5/6 my-5"></div>
+        <div class="flex justify-between w-4/5">
+            <div>
+                <a href="" class="mx-2">Accueil</a>
+                <a href="" class="mx-2">A propos</a>
+                <a href="" class="mx-2">Reservation</a>
+                <a href="" class="mx-2">Conactez-nous</a>
+            </div>
+            <p>Lorem ipsum dolor sit ioqoer o</p>
+        </div>
+
+    </footer>
+    <script src="./javascript/carousel.js"></script>
 </body>
+
 </html>
