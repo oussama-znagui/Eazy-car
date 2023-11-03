@@ -29,5 +29,5 @@ document.querySelectorAll('#prev').forEach(btn =>{
     btn.addEventListener('click',prevSlide)
 })
 showSlide(currentIndex);
-// setInterval(nextSlide,5000);
+setInterval(nextSlide,5000);
 
