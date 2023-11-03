@@ -30,7 +30,7 @@
 }
 
 .faqq.activeee .reponse {
-    max-height: 1000px; /* Use a large value for max-height to ensure it's visible */
+    max-height: 1000px; 
     opacity: 1;
 }
 
