@@ -1,3 +1,4 @@
+
 function savecars(car) {
     localStorage.setItem("cars", JSON.stringify(car));
 }
@@ -154,32 +155,3 @@ vd.forEach(function (e) {
 
     })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

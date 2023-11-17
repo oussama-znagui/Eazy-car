@@ -7,6 +7,7 @@ let itt1 = document.getElementsByClassName(".c");
 
 
 
+
 liItem.forEach(li => {
     li.onclick = function () {
 
@@ -49,11 +50,11 @@ liItem.forEach(li => {
             })
         }
 
+
     }
 
-
-
 });
+
 
 
 

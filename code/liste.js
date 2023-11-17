@@ -5,6 +5,7 @@ const itemImg = document.querySelectorAll(".ss");
 
 
 
+
 itemList.forEach(li => {
     li.onclick = function () {
 
@@ -27,12 +28,12 @@ itemList.forEach(li => {
 
 
 
+
     }
 
 
 
+
 });
-
-
 
 

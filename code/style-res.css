@@ -24,6 +24,7 @@ body {
     background-size: cover;
 }
 
+
 .active {
     background-color: transparent !important;
     border: 2px solid blue;
@@ -65,3 +66,5 @@ body {
         width: 100vw !important;
     }
 }
+
+
