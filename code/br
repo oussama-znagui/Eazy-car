@@ -1,0 +1,25 @@
+<div data-filter="Voiture de sport"
+    class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
+    <a href="#" class="">
+        <img id="id-image" class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/Audi.jpg" alt="">
+    </a>
+    <div class="px-5 pb-5">
+        <a href="#">
+            <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Audi R8</h5>
+            <div class="flex justify-between">
+                <p class="text-white">Voiture de sport</p>
+                <p class="text-white"><span id="prr">1000</span> DHS/Jour</p>
+
+            </div>
+        </a>
+
+        <div class="flex items-center justify-center gap-x-4 my-4">
+            <button
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                id="ajouter">Add to cart</button>
+
+        </div>
+    </div>
+</div>
+
+

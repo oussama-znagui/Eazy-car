@@ -7,54 +7,54 @@ let itt1 = document.getElementsByClassName(".c");
 
 
 
-    liItem.forEach(li => {
-        li.onclick = function(){
+liItem.forEach(li => {
+    li.onclick = function () {
 
-            liItem.forEach(li => {
-                li.className = "a mx-5 bg-gray-300 p-5 cursor-pointer my-4";
-            })
-            li.className = "active";
-        
+        liItem.forEach(li => {
+            li.className = "a text-sm py-2 px-4 my-2    bg-blue-500 ff cursor-pointer";
+        })
+        li.className = "active";
+
         const value = li.textContent;
-         
-          if(value == "Tous"){
+
+        if (value == "Tous") {
             imgItem.forEach(itt => {
-                
+
                 itt.style.display = 'block';
             })
             imgItem1.forEach(itt1 => {
-                
+
                 itt1.style.display = 'flex';
             })
-          }
-          else{
-               imgItem.forEach(itt => {
-            itt.style.display = 'none'; 
-            console.log(itt.getAttribute('data-filter'));
-            if(itt.getAttribute('data-filter')?.toLowerCase() == value.toLowerCase()){
-                itt.style.display = 'block';
+        }
+        else {
+            imgItem.forEach(itt => {
+                itt.style.display = 'none';
+                console.log(itt.getAttribute('data-filter'));
+                if (itt.getAttribute('data-filter')?.toLowerCase() == value.toLowerCase()) {
+                    itt.style.display = 'block';
 
-                
-            }
-        })
 
-        imgItem1.forEach(itt1 => {
-            itt1.style.display = 'none'; 
-            console.log(itt1.getAttribute('data-filter'));
-            if(itt1.getAttribute('data-filter')?.toLowerCase() == value.toLowerCase()){
-                itt1.style.display = 'flex';
+                }
+            })
 
-                
-            }
-        })
-          }
-     
+            imgItem1.forEach(itt1 => {
+                itt1.style.display = 'none';
+                console.log(itt1.getAttribute('data-filter'));
+                if (itt1.getAttribute('data-filter')?.toLowerCase() == value.toLowerCase()) {
+                    itt1.style.display = 'flex';
+
+
+                }
+            })
+        }
+
     }
 
 
 
-    });
+});
 
 
-   
+
 

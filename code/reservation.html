@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
     <title>Eazy car</title>
 
 </head>
+
 <body>
-    
+
     <header class="hero bg-gradient-to-r from-slate-100	 to-slate-300 h-screen ">
         <nav class="container  mx-auto p-6 ">
             <div class="flex items-center justify-between">
@@ -23,8 +25,37 @@
                     <a href="reservation.html" class="hover:text-red-400">Réservation</a>
                     <a href="contact.html" class="hover:text-red-400">Contact</a>
                 </div>
-                <button class="hidden md:block bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded-full" onclick="window.location.href='Panier.html'">Panier</button>
-            </div>        
+                <div tabindex="0" class="group relative inline-block p-5">
+                    <button
+                        class="border-gray-950 border-solid	border-2 rounded-full   text-black px-4 py-2 focus:outline-none">Panier</button>
+                    <div
+                        class="z-10	 hidden group-focus-within:block  absolute bg-gray-50 w-96 z-1 shadow-lg animate-slideIn right-9		">
+                        <div class="col-span-2 p-5">
+
+                            <h1 class="text-xl font-medium ">Panier d'achat</h1>
+
+                            <div id="pa">
+
+                            </div>
+                            <div class="flex flex-col justify-between items-center mt-6 pt-6 border-t gap-y-5">
+                                <div>
+                                    <button id="vider" class="px-4 py-2 text-sm rounded-full bg-red-700">Vider</button>
+                                    <button onclick="window.location.href = 'devis.html'"
+                                        class="px-4 py-2 text-sm rounded-full bg-green-300">Devis</button>
+
+                                </div>
+
+
+                                <div class="flex justify-center items-end">
+                                    <span class="text-sm font-medium text-black mr-1 ">Total HT: </span>
+                                    <span id="total" class="mx-2 text-lg font-bold text-gray-800 "></span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </nav>
         <div class="container py-6 flex flex flex-col items-center justify-between	h-4/5">
             <h1 class="text-center font-black text-4xl w-1/2">
@@ -33,11 +64,11 @@
             </h1>
             <div class="block w-full px-10 items-center justify-between md:flex">
                 <div class="flex md:block gap-x-2">
-                    <div class="bg-red-700 w-5 h-5 rounded-full my-2" ></div>
+                    <div class="bg-red-700 w-5 h-5 rounded-full my-2"></div>
                     <div class="bg-yellow-400 w-5 h-5 rounded-full my-2"></div>
                     <div class="bg-cyan-700	w-5 h-5 rounded-full my-2"></div>
                 </div>
-                <img src="../media/photo-1-page-2.png" alt="" class="mx-auto " >
+                <img src="../media/photo-1-page-2.png" alt="" class="mx-auto ">
                 <div></div>
             </div>
             <div class="flex w-full px-10	  items-center justify-between">
@@ -47,7 +78,8 @@
                         <br>est en cours de traitement
                     </p>
                 </div>
-                <button class="bg-black hover:bg-slate-800	 text-white font-bold py-2 px-4 rounded-full flex  items-center justify-between gap-x-4	 ">
+                <button
+                    class="bg-black hover:bg-slate-800	 text-white font-bold py-2 px-4 rounded-full flex  items-center justify-between gap-x-4	 ">
                     <div class="bg-white w-7 h-7 rounded-full flex  items-center justify-center">
                         <div class="">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
@@ -55,882 +87,742 @@
                                     d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z" />
                             </svg>
                         </div>
-                    </div> 
+                    </div>
                     Commencer l’aventure
                 </button>
                 <div class="w-1/6"></div>
             </div>
-        </div>        
+        </div>
     </header>
     <main>
         <section class="S1">
             <div class="bg-black h-full opacity-80 flex flex-col items-center justify-center gap-y-10	">
-                <h1 class="text-white text-center  text-4xl w-1/2	font-black mb-1 text-xl font-medium "> Préparez-vous à vivre une
+                <h1 class="text-white text-center  text-4xl w-1/2	font-black mb-1 text-xl font-medium "> Préparez-vous à
+                    vivre une
                     aventure extraordinaire avec Eazy Car !
                 </h1>
                 <p class="text-white  w-1/2	text-center">
-                    Parcourez de nouveaux horizons en toute facilité et en toute liberté avec notre sélection de voitures de location. Embarquez pour un voyage inoubliable dès aujourd'hui !
-                </p>               
-            </div>           
+                    Parcourez de nouveaux horizons en toute facilité et en toute liberté avec notre sélection de
+                    voitures de location. Embarquez pour un voyage inoubliable dès aujourd'hui !
+                </p>
+            </div>
         </section>
         <section class="S2 items-center flex flex-col py-10">
             <h1 class="text-center  text-4xl py-6	font-black">Nos services</h1>
             <div class="grid grid-cols-1 mx-10 md:grid-cols-3 gap-4 w-4/5 flex ">
-                
-                    <div class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <div class="flex flex-col items-center p-6">
-                            <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="../" alt=""/>
-                            <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Voitures de qualité</h5>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center"> une option populaire pour les voyageurs soucieux de leur budget ou pour ceux qui ont besoin d'un moyen de transport pratique</p>   
-                        </div>
-                    </div> 
-                    <div class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <div class="flex flex-col items-center p-6">
-                            <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="../media/2011-maserati-grancabrio-sport-01.jpg" alt=""/>
-                            <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Assistance 24/7</h5>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center"> pour répondre aux questions, résoudre les problèmes et aider les clients à tout moment, y compris les week-ends et les jours fériés.</p>   
-                        </div>
-                    </div> 
-                    <div class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <div class="flex flex-col items-center p-6">
-                            <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="../media/2011-maserati-grancabrio-sport-01.jpg" alt=""/>
-                            <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Assurance</h5>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center"> Il existe de nombreux types d'assurances pour couvrir une gamme variée de risques</p>   
-                        </div>
-                    </div> 
-                    <div class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <div class="flex flex-col items-center p-6">
-                            <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="../media/2011-maserati-grancabrio-sport-01.jpg" alt=""/>
-                            <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Location Flexibles</h5>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center"> Nous offrons des options de location flexibles pour s'adapter à votre emploi du temps et à vos exigences spécifiques. Louez à la journée</p>   
-                        </div>
-                    </div> 
-                    <div class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <div class="flex flex-col items-center p-6">
-                            <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="../media/2011-maserati-grancabrio-sport-01.jpg" alt=""/>
-                            <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Programme de Fidélité </h5>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center">Rejoignez notre programme de fidélité et profitez de récompenses exclusives, de réductions spéciales et d'autres avantages pour nos clients réguliers. </p>   
-                        </div>
-                    </div> 
-                    <div class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <div class="flex flex-col items-center p-6">
-                            <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="../media/2011-maserati-grancabrio-sport-01.jpg" alt=""/>
-                            <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Réservation Facile en Ligne</h5>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center">Notre processus de réservation en ligne simple  vous permet de réserver votre véhicule en quelques cliques</p>   
-                        </div>
-                    </div>  
+
+                <div
+                    class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center p-6">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="../" alt="" />
+                        <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Voitures de qualité</h5>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center"> une option populaire pour
+                            les voyageurs soucieux de leur budget ou pour ceux qui ont besoin d'un moyen de transport
+                            pratique</p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center p-6">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                            src="../media/2011-maserati-grancabrio-sport-01.jpg" alt="" />
+                        <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Assistance 24/7</h5>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center"> pour répondre aux
+                            questions, résoudre les problèmes et aider les clients à tout moment, y compris les
+                            week-ends et les jours fériés.</p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center p-6">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                            src="../media/2011-maserati-grancabrio-sport-01.jpg" alt="" />
+                        <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Assurance</h5>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center"> Il existe de nombreux
+                            types d'assurances pour couvrir une gamme variée de risques</p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center p-6">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                            src="../media/2011-maserati-grancabrio-sport-01.jpg" alt="" />
+                        <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Location Flexibles</h5>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center"> Nous offrons des options
+                            de location flexibles pour s'adapter à votre emploi du temps et à vos exigences spécifiques.
+                            Louez à la journée</p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center p-6">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                            src="../media/2011-maserati-grancabrio-sport-01.jpg" alt="" />
+                        <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Programme de Fidélité </h5>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center">Rejoignez notre programme
+                            de fidélité et profitez de récompenses exclusives, de réductions spéciales et d'autres
+                            avantages pour nos clients réguliers. </p>
+                    </div>
+                </div>
+                <div
+                    class=" bg-slate-300 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex flex-col items-center p-6">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                            src="../media/2011-maserati-grancabrio-sport-01.jpg" alt="" />
+                        <h5 class="mb-1 text-xl font-medium text-lime-600	 dark:text-white">Réservation Facile en Ligne
+                        </h5>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 w-4/5 text-center">Notre processus de
+                            réservation en ligne simple vous permet de réserver votre véhicule en quelques cliques</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="S3 flex flex-col justify-center items-center py-10">
             <h1 class="text-center  text-4xl py-6	font-black ">
                 Nos véhicules
             </h1>
-            
-            <div class="flex flex-col items-center justify-between  md:py-8 flex-wrap">
-                <div class="flex" >
-                    <ul class="flex">
-                        
-                            <li class="x mx-5 bg-gray-300 p-5 cursor-pointer ">grid</li>
-                            <li class="x mx-5 bg-gray-300 p-5 cursor-pointer">liste</li>
-                    </ul>
-    
-                </div>
-                <ul class="flex flex-colitems-center justify-center py-4 md:py-8 flex-wrap sm">
-                    <li class="a mx-5  my-3 bg-gray-300 p-5 cursor-pointer active">Tous</li>
-                    <li class="a mx-5  my-3 bg-gray-300 p-5 cursor-pointer">Voiture de luxe</li>
-                    <li class="a mx-5 my-3  bg-gray-300 p-5 cursor-pointer">Voiture de sport</li>
-                    <li class="a mx-5 my-3  bg-gray-300 p-5 cursor-pointer">Voiture économique</li>
+
+            <div class="  w-4/5 items-center justify-between  md:py-8 flex-wrap lg:flex">
+                <ul class="lg:flex flex-colitems-center justify-center py-4 md:py-8 flex-wrap">
+                    <li class="a text-sm py-2 px-4 my-2   bg-blue-500 ff cursor-pointer active">Tous</li>
+                    <li class="a text-sm py-2 px-4 my-2   bg-blue-500 ff cursor-pointer">Voiture de luxe</li>
+                    <li class="a  text-sm py-2 px-4 my-2   bg-blue-500 ff cursor-pointer">Voiture de sport</li>
+                    <li class="a text-sm py-2 px-4 my-2    bg-blue-500 ff cursor-pointer">Voiture économique</li>
                 </ul>
-                
+                <div class="flex">
+                    <ul class="flex">
+
+                        <li class="x text-sm py-2 px-4   bg-blue-500 ff cursor-pointer ">grid</li>
+                        <li class="x text-sm py-2 px-4   bg-blue-500 ff cursor-pointer">liste</li>
+                    </ul>
+
+                </div>
+
+
             </div>
-            <div data-filter="grid"  class="hidden ss flex justify-center items-center">
-                <div  class=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-4/5 my-10 product">
-                
-                    <div data-filter="Voiture de sport" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#" class="">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/Audi.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Audi R8</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture de sport</p>
-                                    <p class="text-white">1000 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
+            <div data-filter="grid" class="hidden ss flex justify-center items-center">
+                <div id="container" class="min-h-screen flex flex-col items-center justify-center">
+                    <div id="page" class="">
+                        <div class="card grid grid-cols-2 gap-4">
+
+                            <div class="card">
+
                             </div>
+
+                        </div>
+                        <div class="">
+                            <div class="card grid-cols-2 ">
+
+                            </div>
+                            <div class="card">
+
+                            </div>
+
                         </div>
                     </div>
-                    <div data-filter="Voiture de luxe"  class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl 	" src="../media/bmw.webp" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">BMW 3 Series</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture de luxe</p>
-                                    <p class="text-white">1000 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture de sport" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/ferari.webp" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Ferari</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture de sports</p>
-                                    <p class="text-white">1000 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture de sport" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/Chevrolet-Corvette.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Chevrolet Corvette</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture de sport</p>
-                                    <p class="text-white">1000 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture économique" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/clio.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Renault Clio</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture économique</p>
-                                    <p class="text-white">500 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture de luxe" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/Tesla.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Tesla Model S</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture de luxe</p>
-                                    <p class="text-white">5000 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture de luxe" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/car-2.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Range rever sport</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture de luxe</p>
-                                    <p class="text-white">1000 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture économique" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/ford-focus.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Ford Focus</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture économique</p>
-                                    <p class="text-white">5000 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture de luxe" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/jaguar-xj-.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Jaguar XJ</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture de luxe</p>
-                                    <p class="text-white">1000 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture économique" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/Toyota-Corolla.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Toyota Corolla</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture économique</p>
-                                    <p class="text-white">5000 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture économique" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/nissan-altima.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Nissan Altima</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture économique</p>
-                                    <p class="text-white">700 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture économique" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/Kia-Rio.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Kia Rio</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture économique</p>
-                                    <p class="text-white">700 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture économique" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/volkswagengolf.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Volkswagen Golf</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture économique</p>
-                                    <p class="text-white">500 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture de sport" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/1090b2ad9b9fe96b3669f91ffff4db49.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Hennessey Venom GT</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture de sport</p>
-                                    <p class="text-white">8000 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture de luxe" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/mazerati.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Maserati ghibli</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture de luxe</p>
-                                    <p class="text-white">5000 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div data-filter="Voiture économique" class=" w-full max-w-sm bg-gray-900 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 b">
-                        <a href="#">
-                            <img class="p-5 h-3/5 max-w-full rounded-3xl " src="../media/207961.jpg" alt="">
-                        </a>
-                        <div class="px-5 pb-5">
-                            <a href="#">
-                                <h5 class="text-xl font-semibold tracking-tight text-white dark:text-white">Dacia sandero</h5>
-                                <div class="flex justify-between">
-                                    <p class="text-white">Voiture économique</p>
-                                    <p class="text-white">700 DHS/Jour</p>
-        
-                                </div>
-                            </a>
-                        
-                            <div class="flex items-center justify-center gap-x-4 my-4">
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-        
-                            </div>
-                        </div>
+
+
+
+
+                    <div id="pagination" class="p-4">
+
+
+
                     </div>
                 </div>
+                <script src="./pagination.js"></script>
             </div>
-            
+
+
             <!-- -------------------------------------------------------------------------------------------------- -->
-            
-            <div data-filter="liste" class="ss flex flex-col justify-center items-center product">
-                <div data-filter="Voiture de sport" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/Audi.jpg" alt="">
+
+            <div data-filter="liste" class=" ss flex flex-col justify-center items-center product">
+
+
+                <div data-filter="Voiture de sport"
+                    class=" forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/Audi.jpg" alt="">
                     <div class="w-full">
                         <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Audi R8</h5>
                         <p class="text-white text-xl">Voiture de sport</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">1000 DHS/Jours</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">2800</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture de luxe"  class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/bmw.webp" alt="">
+                <div data-filter="Voiture de luxe"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/bmw.webp" alt="">
                     <div class="w-full">
                         <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">BMW 3 Series</h5>
                         <p class="text-white text-xl">Voiture de luxe</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">1000 DHS/Jours</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">1100</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture de sport" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/ferari.webp" alt="">
+                <div data-filter="Voiture de sport"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/ferari.webp" alt="">
                     <div class="w-full">
                         <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Ferari</h5>
-                        <p class="text-white text-xl">Voiture de luxe</p>
-                        <div class="flex flex-col justify-between h-full">
-                            <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">1000 DHS/Jours</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-        
-                </div>
-                <div data-filter="Voiture de sport" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/Chevrolet-Corvette.jpg" alt="">
-                    <div class="w-full">
-                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Chevrolet Corvette</h5>
                         <p class="text-white text-xl">Voiture de sport</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">1000 DHS/Jour</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">3400</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture économique" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/clio.jpg" alt="">
+                <div data-filter="Voiture de sport"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/Chevrolet-Corvette.jpg" alt="">
+                    <div class="w-full">
+                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Chevrolet
+                            Corvette</h5>
+                        <p class="text-white text-xl">Voiture de sport</p>
+                        <div class="flex flex-col justify-between h-full">
+                            <p class="my-3 text-white text-xl">
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">2900</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div data-filter="Voiture économique"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/clio.jpg" alt="">
                     <div class="w-full">
                         <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Renault Clio</h5>
                         <p class="text-white text-xl">Voiture économique</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">500 DHS/Jour</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Manuelle</span>
+                                <br>
+                                Système audio : <span id="audio">Bose</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">500</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture de luxe" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/Tesla.jpg"  alt="">
+                <div data-filter="Voiture de luxe"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/Tesla.jpg" alt="">
                     <div class="w-full">
-                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Tesla Model S</h5>
+                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Tesla Model S
+                        </h5>
                         <p class="text-white text-xl">Voiture de luxe</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">5000 DHS/Jours</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">4200</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture de luxe"  class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/car-2.jpg"  alt="">
+                <div data-filter="Voiture de luxe"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/car-2.jpg" alt="">
                     <div class="w-full">
-                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Range rever sport</h5>
+                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Range rever sport
+                        </h5>
                         <p class="text-white text-xl">Voiture de luxe</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div> c
-                                    <p class="text-white text-xl">1000 DHS/Jour</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">3100</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture économique" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/ford-focus.jpg"  alt="">
+                <div data-filter="Voiture économique"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/ford-focus.jpg" alt="">
                     <div class="w-full">
                         <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Ford Focus</h5>
                         <p class="text-white text-xl">Voiture économique</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">500 DHS/Jour</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">non</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">CD</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">600</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture de luxe" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/jaguar-xj-.jpg" alt="">
+                <div data-filter="Voiture de luxe"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/jaguar-xj-.jpg" alt="">
                     <div class="w-full">
                         <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Jaguar XJ</h5>
                         <p class="text-white text-xl">Voiture de luxe</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">1000 DHS/Jour</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">2400</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture économique" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/Toyota-Corolla.jpg" alt="">
+                <div data-filter="Voiture économique"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/Toyota-Corolla.jpg" alt="">
                     <div class="w-full">
-                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Toyota Corolla</h5>
+                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Toyota Corolla
+                        </h5>
                         <p class="text-white text-xl">Voiture économique</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">5000 DHS/Jour</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">700</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture économique" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/nissan-altima.jpg"  alt="">
+                <div data-filter="Voiture économique"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/nissan-altima.jpg" alt="">
                     <div class="w-full">
-                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Nissan Altima</h5>
+                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Nissan Altima
+                        </h5>
                         <p class="text-white text-xl">Voiture économique</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">700 DHS/Jour</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">500</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture économique" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/Kia-Rio.jpg" alt="">
+                <div data-filter="Voiture économique"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/Kia-Rio.jpg" alt="">
                     <div class="w-full">
                         <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Kia Rio</h5>
                         <p class="text-white text-xl">Voiture économique</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">700 DHS/Jour</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">400</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture économique" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/volkswagengolf.jpg" alt="">
+                <div data-filter="Voiture économique"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/volkswagengolf.jpg" alt="">
                     <div class="w-full">
-                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Volkswagen Golf</h5>
+                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Volkswagen Golf
+                        </h5>
                         <p class="text-white text-xl">Voiture économique</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">700 DHS/Jour</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">600</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture de sport" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/1090b2ad9b9fe96b3669f91ffff4db49.jpg"  alt="">
+                <div data-filter="Voiture de sport"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 "
+                        src="../media/1090b2ad9b9fe96b3669f91ffff4db49.jpg" alt="">
                     <div class="w-full">
-                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Hennessey Venom GT</h5>
+                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Hennessey Venom
+                            GT</h5>
                         <p class="text-white text-xl">Voiture de sport</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">8000 DHS/Jour</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">6000</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</button>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture de luxe" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/mazerati.jpg" alt="">
+                <div data-filter="Voiture de luxe"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/mazerati.jpg" alt="">
                     <div class="w-full">
-                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Maserati ghibli</h5>
+                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Maserati ghibli
+                        </h5>
                         <p class="text-white text-xl">Voiture de luxe</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">5000 DHS/Jourr</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">Panoramique</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">1000</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</a>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
-                <div data-filter="Voiture économique" class="bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
-                    <img class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/207961.jpg" alt="">
+                <div data-filter="Voiture économique"
+                    class="forAjout bg-gray-900 p-5 m-5 w-3/4	 rounded-3xl  items-center justify-center gap-6 lg:flex c">
+                    <img id="id-image" class="h-2/4 rounded-2xl lg:w-2/4 " src="../media/207961.jpg" alt="">
                     <div class="w-full">
-                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Dacia sandero</h5>
+                        <h5 class="  text-3xl font-semibold tracking-tight text-white dark:text-white">Dacia sandero
+                        </h5>
                         <p class="text-white text-xl">Voiture économique</p>
                         <div class="flex flex-col justify-between h-full">
                             <p class="my-3 text-white text-xl">
-                                Nombre de rapports : 8
-                                <br>Vitesse maxi : 235 km/h
-                                <br>Puissance fiscale : 11 cv
-                                <div class="flex justify-between">
-                                    <div></div>
-                                    <p class="text-white text-xl">700 DHS/Jour</p>
-                                </div>
-                                <div class="my-3 flex justify-between items-center">
-                                    <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-                                </div>
+                                Toit : <span id="toit">non</span>
+                                <br>
+                                Système audio : <span id="audio">Dolby</span>
+                                <br>
+                                Station : <span id="Station">Ecran Tactile</span>
+
+                            <div class="flex justify-between">
+                                <div></div>
+                                <p class="text-white text-xl"><span id="prr">480</span> DHS/Jours</p>
+                            </div>
+                            <div class="my-3 flex justify-between items-center">
+                                <div></div>
+                                <button id="ajout-list"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter
+                                    a la carte</a>
+                            </div>
                             </p>
                         </div>
                     </div>
-        
+
                 </div>
+
             </div>
-    
+
             <!-- ------------------------------------------------------------------------------------------------- -->
             <nav aria-label="Page navigation example">
                 <ul class="inline-flex -space-x-px text-base h-10">
                     <li>
-                        <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                        <a href="#"
+                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                        <a href="#"
+                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
                     </li>
                     <li>
-                        <a href="#" aria-current="page" class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+                        <a href="#" aria-current="page"
+                            class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+                        <a href="#"
+                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
                     </li>
-                
+
                 </ul>
             </nav>
             <script async src="filtrage.js"></script>
-            <script  async src="liste.js"></script>
-            
-            
-    </section>
+            <script async src="liste.js"></script>
+
+
+        </section>
         <section class="S4">
             <div class="bg-black h-full opacity-80 flex flex-col-reverse justify-center items-center gap-y-10 py-10">
-                
+
                 <form class=" w-4/5 lg:w-1/2 bg-white opacity-80 p-10  rounded-3xl">
                     <div class="grid md:grid-cols-2 md:gap-6 ">
                         <div class="relative z-0 w-full mb-6 group">
-                            <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                            <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Prenom</label>
+                            <input type="text" name="floating_first_name" id="floating_first_name"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="floating_first_name"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Prenom</label>
                         </div>
                         <div class="relative z-0 w-full mb-6 group">
-                            <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                            <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nom</label>
+                            <input type="text" name="floating_last_name" id="floating_last_name"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="floating_last_name"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nom</label>
                         </div>
                     </div>
-                    
+
                     <div class="relative z-0 w-full mb-6 group">
-                        <input type="email" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                        <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">E-mail</label>
+                        <input type="email" name="repeat_password" id="floating_repeat_password"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="floating_repeat_password"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">E-mail</label>
                     </div>
-                    
-                    <div class="grid md:grid-cols-2 md:gap-6">
-                    <div class="relative z-0 w-full mb-6 group">
-                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                        <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Tél (06 xx xx xx xx)</label>
-                    </div>
-                    <div class="relative z-0 w-full mb-6 group">
-                        <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                        <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
-                    </div>
-                    </div>
-                    <div class="relative z-0 w-full mb-6 group">
-                        <input type="email" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                        <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">E-mail</label>
-                    </div>
+
                     <div class="grid md:grid-cols-2 md:gap-6">
                         <div class="relative z-0 w-full mb-6 group">
-                            <input type="date" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                            <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Du</label>
+                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone"
+                                id="floating_phone"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="floating_phone"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Tél
+                                (06 xx xx xx xx)</label>
                         </div>
                         <div class="relative z-0 w-full mb-6 group">
-                            <input type="date" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                            <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">au</label>
+                            <input type="text" name="floating_company" id="floating_company"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="floating_company"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company
+                                (Ex. Google)</label>
                         </div>
+                    </div>
+                    <div class="relative z-0 w-full mb-6 group">
+                        <input type="email" name="repeat_password" id="floating_repeat_password"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="floating_repeat_password"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">E-mail</label>
+                    </div>
+                    <div class="grid md:grid-cols-2 md:gap-6">
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input type="date" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone"
+                                id="floating_phone"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="floating_phone"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Du</label>
                         </div>
-                    
-                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input type="date" name="floating_company" id="floating_company"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="floating_company"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">au</label>
+                        </div>
+                    </div>
+
+                    <button type="submit"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                 </form>
 
-                <h1 class="text-white text-4xl w-2/4 text-center font-black">Votre voyage commence avec nous, réservez votre rouleau de liberté.</h1>
-  
+                <h1 class="text-white text-4xl w-2/4 text-center font-black">Votre voyage commence avec nous, réservez
+                    votre rouleau de liberté.</h1>
+
 
             </div>
 
@@ -949,17 +841,24 @@
             </div>
             <div class="w-2/5">
                 <h2 class="font-black text-2xl my-4">Newsletter !</h2>
-                <p class="text-sm	my-4">Notre newsletter exclusive vous tient au courant des dernières offres de location de voitures, des conseils de voyage passionnants et des actualités de l'industrie automobile</p>
-                
-                    <div class="relative">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
-                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-                            <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
-                            <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
-                            </svg>
-                        </div>
-                    <input type="text" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com">
+                <p class="text-sm	my-4">Notre newsletter exclusive vous tient au courant des dernières offres de
+                    location de voitures, des conseils de voyage passionnants et des actualités de l'industrie
+                    automobile</p>
+
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                            <path
+                                d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                            <path
+                                d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                        </svg>
                     </div>
+                    <input type="text" id="email-address-icon"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="name@flowbite.com">
+                </div>
 
             </div>
         </div>
@@ -976,7 +875,8 @@
 
     </footer>
 
-    
-    
+    <script src="./panier.js"></script>
+
 </body>
+
 </html>

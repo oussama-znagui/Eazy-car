@@ -1,34 +1,67 @@
 @import url('https://fonts.cdnfonts.com/css/brogte');
 
 
-nav{
+nav {
     font-family: 'brogte';
 }
-body{
+
+body {
     font-family: 'poppins' sans-serif;
 }
 
-.S1{
+.S1 {
     background-image: url(../media/pexels-photo-9331822.jpg);
     height: 60vh;
     background-position: center;
     background-size: cover;
 }
 
-.S4{
+.S4 {
     background-image: url(../media/Rectangle\ 30.png);
     height: auto;
-    
+
     background-position: center;
     background-size: cover;
 }
 
-.active{ 
-    background-color: rgb(67, 51, 51) !important;
+.active {
+    background-color: transparent !important;
+    border: 2px solid blue;
+    border-radius: 3em;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 900;
+    padding: 1em 2em;
     margin: 0 1em;
-    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     cursor: pointer;
-    color: white;
+    color: blue !important;
 }
 
+.ff {
+    color: white;
+    font-weight: 900;
+    border-radius: 3em;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem;
+    margin: 0 1em;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+
+}
+
+.w-96 {
+    width: 40rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .w-96 {
+        width: 100vw !important;
+    }
+}
